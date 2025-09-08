@@ -53,7 +53,7 @@ class SongPlaylistScreen extends StatelessWidget {
                   height: 250,
                 ),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               const Text(
                 "My Lagu",
                 style: TextStyle(
@@ -64,19 +64,19 @@ class SongPlaylistScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                "inilah dia my favorit song lagu, kuumpulan my lagu yang sering my dengar xixixi",
+                "inilah dia my favorit kesukaan song lagu, kumpulan my lagu yang sering my dengar xixixi",
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               const Row(
                 children: [
                   CircleAvatar(
                     radius: 16,
                     backgroundImage: AssetImage(
-                      "assets/images/cover.png",
+                      "assets/images/EULA.jpg",
                     ),
                   ),
                   SizedBox(width: 8),
@@ -87,6 +87,80 @@ class SongPlaylistScreen extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              // Body UI
+              const Row(
+                children: [
+                  Icon(Icons.language, color: Colors.grey),
+                  SizedBox(width: 4),
+                  Text(
+                    "82 saves - 6h 9m",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  Container(
+                    width: 35,
+                    height: 50,
+                    padding: EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8),
+                      ),
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            "assets/images/wewq.png",
+                          ),
+                        ),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(8),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 24),
+                  const Icon(
+                    Icons.arrow_circle_down,
+                    color: Colors.grey,
+                    size: 32,
+                  ),
+                  const SizedBox(width: 24),
+                  const Icon(
+                    Icons.person_add,
+                    color: Colors.grey,
+                    size: 32,
+                  ),
+                  const SizedBox(width: 24),
+                  const Icon(
+                    Icons.more_horiz,
+                    color: Colors.grey,
+                    size: 32,
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.shuffle,
+                    color: Colors.grey,
+                    size: 32,
+                  ),
+                  const SizedBox(width: 12),
+                  const Icon(
+                    Icons.play_circle,
+                    color: Colors.green,
+                    size: 40,
                   ),
                 ],
               ),
