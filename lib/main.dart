@@ -91,7 +91,7 @@ class SongPlaylistScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              // Body UI
+              // Middle UI
               const Row(
                 children: [
                   Icon(Icons.language, color: Colors.grey),
