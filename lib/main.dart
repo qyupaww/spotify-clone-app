@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone_app/constants.dart';
 
 void main() {
   runApp(const SpotifyCloneApp());
@@ -163,6 +164,52 @@ class SongPlaylistScreen extends StatelessWidget {
                     size: 40,
                   ),
                 ],
+              ),
+              const SizedBox(height: 16),
+
+              // Body UI
+              Expanded(
+                child: ListView(
+                  shrinkWrap: true,
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[0]}",
+                          width: 50,
+                          height: 50,
+                        ),
+                        const SizedBox(width: 16),
+                        Column(
+                          mainAxisAlignment:
+                              MainAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistSinger[0],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistTitle[0],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

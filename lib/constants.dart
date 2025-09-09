@@ -15,11 +15,11 @@ class SpotifyPlaylistConstants {
     "RISE",
   ];
 
-  static const playlistSinger = {
+  static const playlistSinger = [
     "Hindia",
     "Porter Robbinson",
     "Feast .",
     "Official HIGE DANdism",
     "League of Legends",
-  };
+  ];
 }
