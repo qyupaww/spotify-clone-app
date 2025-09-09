@@ -188,7 +188,7 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[0],
+                                  .playlistTitle[0],
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -198,7 +198,155 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[0],
+                                  .playlistSinger[0],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[1]}",
+                          width: 50,
+                          height: 50,
+                        ),
+                        const SizedBox(width: 16),
+                        Column(
+                          mainAxisAlignment:
+                              MainAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistTitle[1],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistSinger[1],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[2]}",
+                          width: 50,
+                          height: 50,
+                        ),
+                        const SizedBox(width: 16),
+                        Column(
+                          mainAxisAlignment:
+                              MainAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistTitle[2],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistSinger[2],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[3]}",
+                          width: 50,
+                          height: 50,
+                        ),
+                        const SizedBox(width: 16),
+                        Column(
+                          mainAxisAlignment:
+                              MainAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistTitle[3],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistSinger[3],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[4]}",
+                          width: 50,
+                          height: 50,
+                        ),
+                        const SizedBox(width: 16),
+                        Column(
+                          mainAxisAlignment:
+                              MainAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistTitle[4],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              SpotifyPlaylistConstants
+                                  .playlistSinger[4],
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
