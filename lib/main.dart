@@ -39,10 +39,7 @@ class SongPlaylistScreen extends StatelessWidget {
           ),
         ),
         body: Padding(
-          padding: EdgeInsetsGeometry.symmetric(
-            horizontal: 12,
-            vertical: 4,
-          ),
+          padding: EdgeInsetsGeometry.symmetric(horizontal: 12, vertical: 4),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -66,19 +63,14 @@ class SongPlaylistScreen extends StatelessWidget {
               const SizedBox(height: 8),
               const Text(
                 "inilah dia my favorit kesukaan song lagu, kumpulan my lagu yang sering my dengar xixixi",
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.white,
-                ),
+                style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               const SizedBox(height: 8),
               const Row(
                 children: [
                   CircleAvatar(
                     radius: 16,
-                    backgroundImage: AssetImage(
-                      "assets/images/EULA.jpg",
-                    ),
+                    backgroundImage: AssetImage("assets/images/EULA.jpg"),
                   ),
                   SizedBox(width: 8),
                   Text(
@@ -111,25 +103,16 @@ class SongPlaylistScreen extends StatelessWidget {
                     height: 50,
                     padding: EdgeInsets.all(2),
                     decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey,
-                        width: 2,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
-                      ),
+                      border: Border.all(color: Colors.grey, width: 2),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
                     ),
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage(
-                            "assets/images/wewq.png",
-                          ),
+                          image: AssetImage("assets/images/wewq.png"),
                         ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
                       ),
                     ),
                   ),
@@ -140,55 +123,36 @@ class SongPlaylistScreen extends StatelessWidget {
                     size: 32,
                   ),
                   const SizedBox(width: 24),
-                  const Icon(
-                    Icons.person_add,
-                    color: Colors.grey,
-                    size: 32,
-                  ),
+                  const Icon(Icons.person_add, color: Colors.grey, size: 32),
                   const SizedBox(width: 24),
-                  const Icon(
-                    Icons.more_horiz,
-                    color: Colors.grey,
-                    size: 32,
-                  ),
+                  const Icon(Icons.more_horiz, color: Colors.grey, size: 32),
                   const Spacer(),
-                  const Icon(
-                    Icons.shuffle,
-                    color: Colors.grey,
-                    size: 32,
-                  ),
+                  const Icon(Icons.shuffle, color: Colors.grey, size: 32),
                   const SizedBox(width: 12),
-                  const Icon(
-                    Icons.play_circle,
-                    color: Colors.green,
-                    size: 40,
-                  ),
+                  const Icon(Icons.play_circle, color: Colors.green, size: 40),
                 ],
               ),
               const SizedBox(height: 16),
 
               // Body UI
               Expanded(
-                child: ListView(
-                  shrinkWrap: true,
-                  children: [
-                    Row(
+                child: ListView.separated(
+                  itemBuilder: (context, index) {
+                    return Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[0].coverAsset}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[index].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
                         const SizedBox(width: 16),
                         Column(
-                          mainAxisAlignment:
-                              MainAxisAlignment.start,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .songPlaylists[0]
+                                  .songPlaylists[index]
                                   .title,
                               style: TextStyle(
                                 color: Colors.white,
@@ -199,7 +163,7 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .songPlaylists[0]
+                                  .songPlaylists[index]
                                   .singer,
                               style: TextStyle(
                                 color: Colors.white,
@@ -209,164 +173,12 @@ class SongPlaylistScreen extends StatelessWidget {
                           ],
                         ),
                       ],
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[1].coverAsset}",
-                          width: 50,
-                          height: 50,
-                        ),
-                        const SizedBox(width: 16),
-                        Column(
-                          mainAxisAlignment:
-                              MainAxisAlignment.start,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[1]
-                                  .title,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[1]
-                                  .singer,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[2].coverAsset}",
-                          width: 50,
-                          height: 50,
-                        ),
-                        const SizedBox(width: 16),
-                        Column(
-                          mainAxisAlignment:
-                              MainAxisAlignment.start,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[2]
-                                  .title,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[2]
-                                  .singer,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[3].coverAsset}",
-                          width: 50,
-                          height: 50,
-                        ),
-                        const SizedBox(width: 16),
-                        Column(
-                          mainAxisAlignment:
-                              MainAxisAlignment.start,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[3]
-                                  .title,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[3]
-                                  .singer,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[4].coverAsset}",
-                          width: 50,
-                          height: 50,
-                        ),
-                        const SizedBox(width: 16),
-                        Column(
-                          mainAxisAlignment:
-                              MainAxisAlignment.start,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[4]
-                                  .title,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              SpotifyPlaylistConstants
-                                  .songPlaylists[4]
-                                  .singer,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
+                    );
+                  },
+                  separatorBuilder: (context, index) {
+                    return SizedBox(height: 16);
+                  },
+                  itemCount: SpotifyPlaylistConstants.songPlaylists.length,
                 ),
               ),
             ],
