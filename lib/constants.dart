@@ -1,25 +1,41 @@
 class SpotifyPlaylistConstants {
-  static const playlistAsset = [
-    "cincin.jpeg",
-    "ego.jpg",
-    "nina.jpeg",
-    "pretender.jpeg",
-    "rise.jpeg",
+  static const songPlaylists = [
+    SongData(
+      title: "Cincin",
+      singer: "Hindia",
+      coverAsset: "cincin.jpeg",
+    ),
+    SongData(
+      title: "Everything Goes On",
+      singer: "Porter Robbinson",
+      coverAsset: "ego.jpg",
+    ),
+    SongData(
+      title: "Nina",
+      singer: "Feast .",
+      coverAsset: "nina.jpeg",
+    ),
+    SongData(
+      title: "Pretender",
+      singer: "Official HIGE DANdism",
+      coverAsset: "pretender.jpeg",
+    ),
+    SongData(
+      title: "RISE",
+      singer: "League of Legends",
+      coverAsset: "rise.jpeg",
+    ),
   ];
+}
 
-  static const playlistTitle = [
-    "Cincin",
-    "Everything Goes On",
-    "Nina",
-    "Pretender",
-    "RISE",
-  ];
+class SongData {
+  final String title;
+  final String singer;
+  final String coverAsset;
 
-  static const playlistSinger = [
-    "Hindia",
-    "Porter Robbinson",
-    "Feast .",
-    "Official HIGE DANdism",
-    "League of Legends",
-  ];
+  const SongData({
+    required this.title,
+    required this.singer,
+    required this.coverAsset,
+  });
 }
