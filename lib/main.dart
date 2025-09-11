@@ -175,7 +175,7 @@ class SongPlaylistScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[0]}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[0].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
@@ -188,7 +188,8 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[0],
+                                  .songPlaylists[0]
+                                  .title,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -198,7 +199,8 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[0],
+                                  .songPlaylists[0]
+                                  .singer,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -212,7 +214,7 @@ class SongPlaylistScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[1]}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[1].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
@@ -225,7 +227,8 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[1],
+                                  .songPlaylists[1]
+                                  .title,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -235,7 +238,8 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[1],
+                                  .songPlaylists[1]
+                                  .singer,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -249,7 +253,7 @@ class SongPlaylistScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[2]}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[2].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
@@ -262,7 +266,8 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[2],
+                                  .songPlaylists[2]
+                                  .title,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -272,7 +277,8 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[2],
+                                  .songPlaylists[2]
+                                  .singer,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -286,7 +292,7 @@ class SongPlaylistScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[3]}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[3].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
@@ -299,7 +305,8 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[3],
+                                  .songPlaylists[3]
+                                  .title,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -309,7 +316,8 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[3],
+                                  .songPlaylists[3]
+                                  .singer,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
@@ -323,7 +331,7 @@ class SongPlaylistScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/images/${SpotifyPlaylistConstants.playlistAsset[4]}",
+                          "assets/images/${SpotifyPlaylistConstants.songPlaylists[4].coverAsset}",
                           width: 50,
                           height: 50,
                         ),
@@ -336,7 +344,8 @@ class SongPlaylistScreen extends StatelessWidget {
                           children: [
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistTitle[4],
+                                  .songPlaylists[4]
+                                  .title,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -346,7 +355,8 @@ class SongPlaylistScreen extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               SpotifyPlaylistConstants
-                                  .playlistSinger[4],
+                                  .songPlaylists[4]
+                                  .singer,
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14,
