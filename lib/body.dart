@@ -8,8 +8,10 @@ class BodyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
+        Flexible(
           child: ListView.separated(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return Row(
                 children: [

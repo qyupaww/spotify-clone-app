@@ -38,9 +38,10 @@ class SongPlaylistScreen extends StatelessWidget {
             ),
           ),
         ),
-        body: Padding(
+        body: SingleChildScrollView(
           padding: EdgeInsetsGeometry.symmetric(horizontal: 12, vertical: 4),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [const ContentWidgets()],
           ),
